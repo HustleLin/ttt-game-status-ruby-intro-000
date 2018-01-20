@@ -16,3 +16,14 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
   [2, 4, 6],
   [0, 4, 8],
   ]
+
+  def won?(board)
+    WIN_COMBINATIONS.each do |win|
+      if board[win[0]] = "X" && board[win[1]] = "X" && board[win[2]] = "X" || board[win[0]] = "O" && board[win[1]] = "O" && board[win[2]] = "O"
+        return true
+      else
+        false
+      end
+    end
+  end
+end
