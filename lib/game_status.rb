@@ -19,7 +19,7 @@ end
 def won?(board)
   WIN_COMBINATIONS.each do |win|
     if board[win[0]] = " " && board[win[1]] = " " && board[win[2]] = " "
-      return win
+      return WIN_COMBINATIONS
     else
       false
     end
