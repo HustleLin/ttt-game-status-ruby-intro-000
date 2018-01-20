@@ -27,11 +27,11 @@ def won?(board)
 end
 
 def full?(board)
-  board.each do |full|
-    if board != " "
-      return true
+  board.each do |pos|
+    if pos = " "
+      return false
     else
-      false
+      true
     end
   end
 end
