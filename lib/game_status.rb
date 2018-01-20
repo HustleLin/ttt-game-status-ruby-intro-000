@@ -31,7 +31,7 @@ def full?(board)
     if pos = " "
       return false
     elsif draw?(board)
-      return false
+      return true
     else
       true
     end
