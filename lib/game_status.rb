@@ -30,7 +30,7 @@ def full?(board)
   board.each do |pos|
     if pos = " "
       return false
-    elsif draw?
+    elsif draw?(board)
       return false
     else
       true
