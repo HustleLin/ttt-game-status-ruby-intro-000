@@ -4,7 +4,6 @@ def position_taken?(board, index)
 end
 
 # Define your WIN_COMBINATIONS constant
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
   WIN_COMBINATIONS = [
   [0, 1, 2],
@@ -19,7 +18,7 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 def won?(board)
   WIN_COMBINATIONS.each do |win|
-    if board[win[0]] = " " && board[win[1]] = "X" && board[win[2]] = "X"
+    if board[win[0]] = " " && board[win[1]] = " " && board[win[2]] = " "
       return true
     else
       false
